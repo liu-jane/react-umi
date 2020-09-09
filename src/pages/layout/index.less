@@ -1,0 +1,80 @@
+.ly_index {
+  .ly_slider {
+    .ant-layout-sider-children {
+      position: relative;
+      padding-top: 60px;
+    }
+  }
+  .ly_slider::-webkit-scrollbar {
+    display: none;
+  }
+  .site-layout {
+    .ly_header {
+      background: #fff;
+      padding: 0 20px 0 220px;
+      transition: all 0.2s;
+      .trigger {
+        font-size: 18px;
+        line-height: 64px;
+        padding: 0 24px;
+        cursor: pointer;
+        transition: color 0.3s;
+      }
+      .trigger:hover {
+        color: #1890ff;
+      }
+      .ly_collapse {
+        display: inline-block;
+        // position: absolute;
+        // left: 200px;
+        // top: 0;
+      }
+      .ly_header_menu {
+        display: inline-block;
+      }
+      .logo {
+        width: 200px;
+        height: 64px;
+        box-sizing: border-box;
+        background: rgba(255, 255, 255, 0.2);
+        position: absolute;
+        top: 0;
+        left: 0;
+        background-color: red;
+        z-index: 1000;
+        transition: all 0.2s;
+      }
+      .ly_tabs{
+        display: inline-block;
+        height: 64px;
+        vertical-align: top;
+        box-sizing: border-box;
+        .ant-tabs-bar{
+          border: none;
+          margin-bottom: 0;
+          height: 64px;
+          .ant-tabs-nav {
+            .ant-tabs-tab{
+              padding: 20px 10px;
+              border: none;
+              background-color: #fff;
+              transition: none;
+            }
+            .ant-tabs-tab-active{
+              border-bottom: 2px solid #1890ff;
+            }
+          }
+        }
+      }
+    }
+
+    .ly_content {
+      height: calc(100vh - 104px);
+      margin: 20px;
+      margin-top: 84px;
+      padding: 20px;
+      background-color: #fff;
+      box-sizing: border-box;
+    }
+  }
+}
